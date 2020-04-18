@@ -1,3 +1,6 @@
 wwwroot/node_modules/
+wwwroot/css/*.min.css
+wwwroot/js/*.min.js
+
 obj/
 bin/

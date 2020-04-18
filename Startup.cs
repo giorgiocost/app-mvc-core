@@ -22,6 +22,8 @@ namespace app_mvc_core {
                 app.UseDeveloperExceptionPage ();
             }
 
+            app.UseStaticFiles();
+
             app.UseMvc (routes => 
             {
                 routes.MapRoute("default","{controller=Home}/{action=Index}/{id?}");

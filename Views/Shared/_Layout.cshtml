@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App MVC Core</title>
+    <environment include="Development">
+        <link rel="stylesheet" href="~/node_modules/bootstrap/dist/css/bootstrap.css">
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="~/node_modules/bootstrap/dist/css/bootstrap.css">
+    </environment>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <main class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    
+    <footer class="border-top footer text-muted">
+       <span class="container">
+            Rodape
+       </span> 
+    </footer>
+</body>
+</html>

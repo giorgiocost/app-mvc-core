@@ -26,7 +26,7 @@ namespace app_mvc_core {
 
             app.UseMvc(routes => 
             {
-                routes.MapRoute("areas","{area:exists}{controller=Cadastro}/{action=Index}/{id?}");
+                routes.MapRoute("areas","{area:exists}/{controller=Home}/{action=Index}/{id?}");
                 routes.MapRoute("default","{controller=Home}/{action=Index}/{id?}");
             });
         }

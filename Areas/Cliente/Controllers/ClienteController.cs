@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace app_mvc_core.Areas.Carrinho.Controllers
+namespace app_mvc_core.Areas.Cliente.Controllers
 {
-    public class CarrinhoController : Controller
+    public class ClienteController : Controller
     {
-        [Area("Carrinho")]
+        [Area("Cliente")]
         public IActionResult Index()
         {
             return View();

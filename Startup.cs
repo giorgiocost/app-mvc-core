@@ -24,8 +24,9 @@ namespace app_mvc_core {
             app.UseStaticFiles();
 
 
-            app.UseMvc (routes => 
+            app.UseMvc(routes => 
             {
+                routes.MapRoute("areas","{area:exists}{controller=Cadastro}/{action=Index}/{id?}");
                 routes.MapRoute("default","{controller=Home}/{action=Index}/{id?}");
             });
         }

@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace app_mvc_core.Areas.Cliente.Controllers
+namespace app_mvc_core.Modulos.Produtos.Controllers
 {
-    public class ClienteController : Controller
+    public class CadastroController : Controller
     {
-        [Area("Cliente")]
+        [Area("Produtos")]
         public IActionResult Index()
         {
             return View();

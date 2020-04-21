@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace app_mvc_core.Areas.Produtos.Controllers
+namespace app_mvc_core.Modulos.Carrinho.Controllers
 {
-    public class CadastroController : Controller
+    public class CarrinhoController : Controller
     {
-        [Area("Produtos")]
+        [Area("Carrinho")]
         public IActionResult Index()
         {
             return View();

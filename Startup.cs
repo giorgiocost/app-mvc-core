@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using app_mvc_core.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -22,6 +23,7 @@ namespace app_mvc_core {
                     options.AreaViewLocationFormats.Add("/Views/Shared/{0}.cshtml");
                 }
             );
+            services.AddTransient<IPedidosRepository, PedidosRepository>();
             services.AddMvc().SetCompatibilityVersion (CompatibilityVersion.Version_2_1);
         }
 

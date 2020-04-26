@@ -1,3 +1,4 @@
+using app_mvc_core.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace app_mvc_core.Data
@@ -9,5 +10,7 @@ namespace app_mvc_core.Data
         {
             
         }
+
+        public DbSet<Aluno> Alunos { get; set; }
     }
 }

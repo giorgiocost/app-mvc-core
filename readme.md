@@ -1,4 +1,4 @@
-# App Mvc Core
+# App Mvc Core - [Estudo]
 
 ### install BuildBundlerMinifier
 ```
